@@ -1,0 +1,296 @@
+.fixtures{
+height: 100%;
+width:50%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: black;
+overflow:auto;
+padding-top: 20px;
+display:none;
+}
+.fixtures a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.fixtures a:hover{
+    color: #f1f1f1;
+}
+.fixturebody{
+    margin-left: 0;
+    padding: 0px 10px;
+}
+.head{
+    background-color: brown;
+    text-align: center;
+}
+h6{
+    font-size: 20px;
+    text-align: center;
+}
+.tb{
+    background-color: black;
+    width:100%;
+    text-align: left;
+}
+.tb a{
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    color:#f1f1f1;
+    overflow: hidden;
+
+}
+.tb a:hover{
+    background-color:red;
+    font-size: xx-large;
+}
+.tb-content{
+    text-transform: uppercase;
+    font-size: x-large;
+
+}
+.premier-tb{
+    width:fit-content;
+}
+.premier-drop-content{
+    display: none;
+ z-index: 1;
+ width:40%;
+overflow:auto;
+}
+.premier-drop-content a{
+    color:black;
+    font-size:large;
+    display:inline-block;
+    overflow: auto;
+
+
+
+}
+.premier-mbtn{
+    border:none;
+    background-color: black;
+    color:white;
+    font-size: xx-large;
+    text-transform:uppercase;
+}
+.premier-mbtn:hover{
+    background-color: red;
+
+}
+.premier-tb:hover .premier-drop-content{
+    display:block;
+
+}
+#serie-a, #premier, #Tp-Gscorers, .groupA, .groupB, .groupC, .groupD, .groupE, .groupF, .groupG, .groupH{
+    border-collapse:collapse;
+    width:70%;
+}
+#serie-a td, #serie-a th, #premier td , #premier th, #Tp-Gscorers td, #Tp-Gscorers th, .groupA td, .groupB td, .groupC td, .groupD td, .groupE td, .groupF td, .groupG td, .groupH td{
+    border:1px solid green;
+    padding:10px;
+
+}
+#serie-a th, #premier th, #Tp-Gscorers th, .groupA th, .groupB th, .groupC th, .groupD th, .groupE th, .groupF th, .groupG th, .groupH th {
+    text-align: left;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color:#818181;
+    color:white;
+    width:5%;
+    height:80%;
+}
+#serie-a tr:nth-child(even),#premier tr:nth-child(even), #Tp-Gscorers tr:nth-child(even), .groupA tr:nth-child(even), .groupB tr:nth-child(even), .groupC tr:nth-child(even), .groupD tr:nth-child(even), .groupE tr:nth-child(even), .groupF tr:nth-child(even), .groupG tr:nth-child(even), .groupH tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#serie-a tr:hover,#premier tr:hover, #Tp-Gscorers tr:hover,.groupA tr:hover, .groupB tr:hover, .groupC tr:hover, .groupD tr:hover, .groupE tr:hover, .groupF tr:hover, .groupG tr:hover, .groupH tr:hover{
+    background-color: #ddd;
+}
+.fdrop{
+    display:block;
+ width:fit-content;
+ background-color: black; 
+float:left;
+height: fit-content;
+padding:10px;
+position: sticky;
+top:0;
+}
+.fdrop-content{
+ color:white;
+ font-size :70%;
+
+}
+.fdrop-content:hover{
+    color:red;
+}
+.fdrop:hover .fixtures{
+    display:block
+}
+#tpgoalmenu{
+    display:none;
+    width:fit-content;
+    background-color: black;
+    position: fixed;
+    left:0;
+    z-index: 1;
+}
+#topgoalmenu a{
+    color:#818181;
+    font-size:x-large;
+    display:inline-block;
+
+
+
+}
+#tpgoalmenubtn, #tpgoalhomebtn, #tpgoalpredictionbtn, #tpgoalnewsbtn{
+    font-size: x-large;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-transform: uppercase;
+    color:white;
+    background-color: inherit;
+}
+#tpgoalmenubtn:hover, #tpgoalhomebtn:hover, #tpgoalpredictionbtn:hover, #tpgoalnewsbtn:hover{
+    background-color: red;
+    font-size:xx-large ;
+}
+#tpgoalmenubtn :hover .tpgoalmenu a{
+    display:block;
+}
+#vip{
+    color:red;
+    padding:none;
+    font-size:25px;
+    animation:infinite;
+    animation-name: vip;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    background-color: inherit;
+    border:none ;
+    float:right;
+    position:fixed;
+    right:0;
+    bottom:0;
+
+}
+@keyframes vip{
+    from{font-size:0px;}
+    to {font-size:70px;}
+}
+#predhome, #predanalysis, #prednews{
+    text-transform: uppercase;
+    font-size: x-large;
+    padding:20px;
+    color:white;
+    background-color: #818181;
+
+}
+.fa{
+    position:static;
+    bottom:0;
+    padding:10px;
+    font-size:50px;
+    width:50px;
+    text-align:center;
+    text-decoration:none;
+    text-align:center;
+    border-radius: 100%;
+}
+.fa-facebook{
+    background-color:inherit;
+    color:blue;
+}
+.fa-youtube{
+    background-color:inherit;
+    color:red;
+    
+}
+.fa-twitter{
+    background-color:inherit;
+    color:blue;
+}
+.fa-telegram{
+    background-color:inherit;
+    color:blue;
+}
+.anatable{
+    border:collapse;
+    width:100%;
+    height:auto;
+    margin-left: 10%;
+    
+}
+.anatable th{
+    text-align: center;
+    font-size: x-large;
+    background-color: skyblue;
+}
+.anatable td{
+    text-align: center;
+    font-size:larger;
+    border:1px solid rgb(243, 237, 237);
+    color:grey
+}
+
+.anatable tr:hover{
+    background-color: #ddd;
+}
+
+@media screen {
+  .anatable th{
+    font-size: large;
+    text-align: center;
+  }  
+  .anatable{width:70%}
+}
+.new-nav{
+background-color: #818181;
+width:100%;
+height:30%;
+}
+.new-navbtn{
+    margin-left: 20px;
+    background-color: inherit;
+    border: none;
+    font-size: x-large;
+    color:#ddd
+}
+.new-navbtn:hover{
+    color:red;
+
+}
+.fdd,.tdd{
+    display:none;
+    background-color: #818181;
+}
+.new-navbtn .fdd{
+    display:inline-block;
+}
+@media screen {
+    .new-nav{
+        width: 100%;
+        height:fit-content;
+        overflow:auto;
+        white-space: nowrap;
+    }
+    .new-navbtn{
+        font-size: larger;
+        margin-left: 3px;
+    }
+}
+.share_icons{
+    display:flexbox;
+    width: 300px;
+    height:auto;
+    background-color:inherit;
+    position:absolute;
+    font-family: 'roboto';
+padding: 20px;
+right: 20px;
+}
