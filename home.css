@@ -1,0 +1,341 @@
+.navbar{
+    max-height:5%;
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+}
+.navbar a{
+    font-size:100%;
+    color:white;
+    padding:10px 8px;
+    text-decoration:dotted;
+    overflow:hidden;
+    max-height: 5%;
+    margin-bottom: 5px;
+}
+.dropdown{
+    float:left;
+    overflow: hidden;
+}
+.dropdown, .dropbtn{
+    font-size:20px;
+    border:none;
+    outline:none;
+    color:white;
+    padding:14px 16px;
+    background-color: inherit;
+    margin:0;
+}
+.navbar a:hover, .dropdown:hover, .dropbtn:hover{
+    background-color: red;
+}
+
+
+.title{
+    font-size: 70px;
+    color:aqua;
+    flex-wrap: wrap;
+    float:inline-end;
+
+}
+.fix{
+    color:brown;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: double;
+}
+#engbtn{
+    font-size: xx-large;
+    border:0px;
+    padding: none;
+    color:gray;
+    font-style: oblique;
+}
+.eng{
+    text-align:center;
+    font-size:large;
+    color:red;
+    outline:green;
+    padding:10px;
+}
+.quote{
+    font-size:large;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 100px;
+    text-align: left;
+}
+.end{
+    text-align:center;
+    width:100%;
+
+}
+@media  screen and(max-height:450px){
+    .sidebar{padding-top: 15px;}
+    .sidebar a{font-size: 18px;}
+}
+@media screen {
+  .end1{text-align: center;
+        font-size: smaller;
+        }  
+}
+.ita{
+    text-align: center;
+    color:red;
+    font-size: large;
+    text-transform: uppercase;
+    padding:10px;
+    outline: green;
+}
+.fra,.spa, .other{
+    text-align:center;
+    color:red;
+    font-size:large;
+    text-transform:uppercase;
+    padding:10px;
+    outline:green;
+}
+.lower{
+    position:absolute;
+    top: 120%;
+    font-size: 50px;
+    color:maroon;
+    text-transform: uppercase;
+
+}
+@media screen {
+    .lower{
+        position:absolute;
+        top: 100%;
+        font-size: 30px;
+        color:maroon;
+        text-transform: uppercase;
+    }
+    .iimage{
+        height:auto;
+        width:100%;
+    }
+}
+.fa{
+    font-size:100px;
+    width:30px;
+    text-decoration:none;
+    text-align:center;
+    border-radius: 100%;
+    font-weight: bolder;
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-telegram{
+    color:blue;
+}
+.fa-youtube{
+    color:red;
+}
+.fa-twitter{
+    color:blue;
+}
+
+
+#htbbtn{
+     color:#818181;
+     font-size:x-large;
+     border:none;
+     padding:none;
+     background-color:inherit;
+     text-align: right;
+
+}
+#hfbtn{
+    color:#818181;
+    font-size: x-large;
+    border: none;
+    padding:none;
+    background-color: inherit;
+    text-align: right;
+}
+    .htbbtn-content{
+        line-height: 10px;
+        color:#818181;
+        display:none;
+
+    }
+    .hfbtn-content{
+        line-height: 10px;
+        color:#818181;
+        display:none;
+    }
+     #hfbtn .hfbtn-content{
+        display: inline-block;
+     }
+    
+    .htbbtn .htbbtn-content{
+        display:inline-block;
+    }
+    .htbbtn:hover, .hfbtn:hover{
+        color:#f1f1f1;
+    }
+    .sidebar{
+        height:100%;
+        z-index:1;
+        top:0;
+        left:0;
+        background-color:rgb(81, 88, 90);
+        overflow-x:scroll;
+        transition:0.5s;
+        padding-top:60px;
+        position:fixed;
+        overflow-y: visible;
+        color:#f1f1f1 ;
+        
+    }
+    .sidebar a{
+        padding:8px 8px 16px 32px;
+        text-decoration:none;
+        font-size:25px;
+        display:inline-block;
+        transition:0.3s;
+        line-break: inherit;
+        width: auto;
+        height: auto;
+        color: cadetblue;
+    }
+    .sidebar a:hover{
+        color:#f1f1f1;
+    }
+    .sidebar .closebtn{
+        position:absolute;
+        top:0;
+        right:25px;
+        font-size:36px;
+        margin-left:50px;
+    }
+    @media screen and (max-height:450px){
+        .sidebar{padding-top:450px;}
+        .sidebar a{font-size:18px}
+    }
+    #abtbtn, #predbtn{
+        padding:none;
+        border:none;
+        background-color: inherit;
+        color:grey;
+        font-size: x-large;
+    }
+    #abtbtn:hover, #predbtn:hover, #hfbtn:hover, #htbbtn:hover{
+        color:white;
+        font-size: xx-large;
+    }
+    .menu{
+        position:sticky;
+        position:-webkit-sticky;
+        top:5;
+        color:white;
+    }
+    .container{
+        width:100%;
+        height:100%;
+    }
+        @media  screen and (max-width:60%) {.menu,.navbar,.sidebar{
+width:60%;
+        }
+            
+        
+    }@media screen and (max-width:460px){
+        .quote{text-align: left;
+        font-size: small;}
+    }
+    #writeUP{
+        text-transform: uppercase;
+        animation: infinite;
+        animation-name: writeUP;
+        animation-duration: 20s;
+        color:skyblue;
+        font-size: 30px;
+        position:relative;
+        animation-delay: 2s;
+        line-break: none;
+    }
+    @keyframes writeUP{
+        from{right:0px;}
+        to{right:1500px;}
+    }
+    @media  screen  {
+        #writeUP{font-size:larger;}
+    }
+    @media screen{
+        .nlsbtn{width:20%;}
+    }
+    @media screen {
+        .letter{font-size: xx-large;}
+    }
+    @media screen {
+        @keyframes writeUP {
+         from{right:0px;} 
+         to{right:500px}  
+        }
+    }
+    .nlsbtn{
+      width:10%;
+      height: 40px; 
+      background-color: green; 
+    }
+    .letter{
+        color:white;
+        background-color: #333;
+        font-size: 50px;
+    }
+    .menu1, .menu2 , .menu3{
+        width:30px;
+        height:2px;
+     margin-top: 8px;
+       background-color: white;
+       margin-left: 20px;
+       bottom: 0;
+       z-index: 1;
+       position: relative;
+    }
+    .site{
+        color:darkorange;
+        text-align:justify;
+
+    }
+    .qlinks{
+        border:none;
+        background-color: inherit;
+        font-size:medium;
+        color: grey;
+    }
+    .trends{
+        border:none;
+        background-color: inherit;
+        font-size: large;
+        border-bottom: 2px solid black;
+        padding-top: 10px;
+        color: purple;
+
+
+    }
+    .subsec{
+        background-color:inherit;
+        color: #f1f1f1;
+        overflow-x:auto;
+        overflow-y: hidden;
+        width: 100%;
+        height:auto;
+        white-space: nowrap;
+        margin-top: 80px;
+        z-index:-1;
+        top: 50;
+    }
+    .subsec a{
+        font-size:xx-large;
+        color:#818181;
+        padding:10px 8px;
+        text-decoration:dotted;
+        max-height: 5%;
+        margin-bottom: 5px;
+    }
