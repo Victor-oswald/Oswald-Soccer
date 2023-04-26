@@ -353,6 +353,8 @@ width:60%;
         .new-container{
             width:100%;
             border:none;
+            margin-left: none;
+            padding-left: none;
         }
     }
     .sidebar-social{
