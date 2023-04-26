@@ -289,8 +289,49 @@ height:30%;
     width: 300px;
     height:auto;
     background-color:inherit;
-    position:absolute;
     font-family: 'roboto';
 padding: 20px;
 right: 20px;
+}
+.new-container{
+    width: 55%;
+    border-right: 2px solid black;
+}
+.side-container{
+    width:40%;
+    position:absolute;
+    right:4%;
+    top:16%;
+    height: 100%;
+
+}
+@media screen and (max-width:500px) {
+    .new-container{
+        width: 100%;
+        border: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .side-container{
+        display: none;
+    }
+    
+    #trophy-main, #origin-of-trophy-main{
+        display:block;
+    }
+}
+@font-face {
+    font-family:myfont;
+    src: url('css/fonts/canterbury.ttf');
+}
+.s-title{
+    font-family:myfont;
+}
+.blog{
+    position: absolute;
+    display: block;
+
+}
+#trophy-main, #origin-of-trophy-main{
+    display:none;
 }

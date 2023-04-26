@@ -191,6 +191,7 @@
         position:fixed;
         overflow-y: visible;
         color:#f1f1f1 ;
+        display: none;
         
     }
     .sidebar a{
@@ -331,11 +332,36 @@ width:60%;
         z-index:-1;
         top: 50;
     }
-    .subsec a{
+    .subsec a, .subsec1{
         font-size:xx-large;
         color:#818181;
         padding:10px 8px;
         text-decoration:dotted;
         max-height: 5%;
         margin-bottom: 5px;
+    }
+    .new-container{
+        width: 70%;
+        height: auto;
+        margin-left: 20%;
+        border:none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-right: none;
+    }
+    @media screen and (max-width:500px) {
+        .new-container{
+            width:100%;
+            border:none;
+        }
+    }
+    .sidebar-social{
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 50px;
+    }
+    #sidebar-title{
+        color:rgb(222, 204, 239);
+        padding-left: 50px;
+        font-size: x-large;
     }
