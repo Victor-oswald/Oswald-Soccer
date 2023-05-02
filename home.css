@@ -349,9 +349,9 @@ width:60%;
         padding-right: 5px;
         border-right: none;
     }
-    @media screen and (min-width:450px) {
+    @media screen and (max-width:450px) {
         .new-container{
-            width:auto;
+            width:100%;
             border:none;
             margin-left: none;
             padding-left: none;
