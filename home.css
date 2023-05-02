@@ -349,11 +349,8 @@ width:60%;
         padding-right: 5px;
         border-right: none;
     }
-    @media screen and (max-width:450px) {
-        .new-container{
-           
-        }
-    }
+
+    
     .sidebar-social{
         position: absolute;
         bottom: 0;
