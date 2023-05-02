@@ -353,7 +353,7 @@ width:60%;
     
 @media screen and (max-width:500px) {
 .new-container{
-    width:100%;
+    width:fit-content;
     float:left;
 }
 }
