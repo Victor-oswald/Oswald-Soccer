@@ -351,9 +351,7 @@ width:60%;
     }
     @media screen and (max-width:450px) {
         .new-container{
-            border:none;
-            margin-left: none;
-            padding-left: none;
+           
         }
     }
     .sidebar-social{
