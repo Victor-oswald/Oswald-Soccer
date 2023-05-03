@@ -303,7 +303,7 @@ right: 20px;
     width:40%;
     position:absolute;
     right:4%;
-    top:16%;
+    top:40%;
     height: 100%;
 
 }
@@ -317,8 +317,9 @@ right: 20px;
     .side-container{
         display: none;
     }
-    
-    #trophy-main, #origin-of-trophy-main{
+}
+    @media screen and (max-width:500px) {
+    #trophy-main, #origin-of-trophy-main, #maradona-main, #pele-main, #maradona-vs-pele-main{
         display:block;
     }
 }
@@ -340,6 +341,6 @@ right: 20px;
     display: block;
 
 }
-#trophy-main, #origin-of-trophy-main{
+#trophy-main, #origin-of-trophy-main, #maradona-main, #pele-main, #maradona-vs-pele-main{
     display:none;
 }
