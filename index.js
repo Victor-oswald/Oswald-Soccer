@@ -37,9 +37,11 @@ function Prediction(){
         uf.style.display = "none"
     }
 }
-var blogIMG = document.getElementsByClassName('blog-img');
-if(screen.width<='500px'){
-    blogIMG.style.display='block';
-} else{
-    blogIMG.style.display='none';
+
+var display=screen.width;
+if(display>='500'){
+    var blobIMG =document.getElementsByClassName('blog-img');
+    for(i=0; i<blobIMG.length; i++){
+        blobIMG[i].style.display="none";
+    }
 }
