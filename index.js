@@ -37,3 +37,9 @@ function Prediction(){
         uf.style.display = "none"
     }
 }
+var blogIMG = document.getElementsByClassName('blog-img');
+if(screen.width<=500){
+    blogIMG.style.display='block';
+} else{
+    blogIMG.style.display='none';
+}
