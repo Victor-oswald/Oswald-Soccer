@@ -47,8 +47,7 @@ if(display>='500'){
 
 }
 else{
-    var home=document.getElementsByClassName('sideBar');
-    for(var i=0; i<home.length; i++){
-        home[i].style.width='100%';
-    }
+    var home=document.getElementById('mySideBar');
+        home.style.width='80%';
+    
 }
