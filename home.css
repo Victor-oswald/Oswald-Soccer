@@ -152,11 +152,11 @@
         white-space: nowrap;
         transition:0.5s;
         padding-top:60px;
-        position:sticky;
+        position:absolute;
         color:#f1f1f1 ;
         display: none;
         justify-self: center;
-        margin-left: 50px;
+        margin: 0 auto;
         
     }
     .sidebar a{
