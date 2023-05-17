@@ -2,12 +2,12 @@ function openNavigation(){
 var sideBar=document.getElementById("mySidebar");
 
 sideBar.style.display='block';
-    sideBar.style.width='70%';
+    sideBar.style.height='auto';
 }
 
 
 function closeNavigation() {
-    document.getElementById("mySidebar").style.width = "0px";
+    document.getElementById("mySidebar").style.display= "none";
 
 }
 
