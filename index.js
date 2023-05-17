@@ -43,5 +43,12 @@ if(display>='500'){
     var blobIMG =document.getElementsByClassName('blog-img');
     for(i=0; i<blobIMG.length; i++){
         blobIMG[i].style.display="none";
+    };
+
+}
+else{
+    var home=document.getElementsByClassName('new-container');
+    for(var i=0; i<home.length; i++){
+        home[i].style.width='100%';
     }
 }
