@@ -48,6 +48,6 @@ if(display>='500'){
 }
 else{
     var home=document.getElementById('mySideBar');
-        home.style.width='80%';
+        home.style.width='60%';
     
 }
