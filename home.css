@@ -152,7 +152,7 @@
         white-space: nowrap;
         transition:0.5s;
         padding-top:60px;
-        position:absolute;
+        position:sticky;
         color:#f1f1f1 ;
         display: none;
         justify-self: center;
@@ -162,6 +162,7 @@
     .sidebar a{
         padding:8px 8px 16px 32px;
         text-decoration:none;
+
         font-size:25px;
         display:inline-block;
         transition:0.3s;
@@ -331,5 +332,8 @@ width:60%;
     #sidebar-title{
         color:rgb(222, 204, 239);
         padding-left: 50px;
+        font-size: x-large;
+    }
+    p{
         font-size: x-large;
     }
