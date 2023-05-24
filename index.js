@@ -51,9 +51,3 @@ else{
         home.style.width='60%';
     
 }
-var menu=screen.width;
-
-if(menu<='500'){
-    var bar=document.getElementById('mySideBar');
-    bar.style.font-size='medium';
-    }
