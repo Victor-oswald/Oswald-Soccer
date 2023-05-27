@@ -337,3 +337,9 @@ width:60%;
     p{
         font-size: large;
     }
+#correct{
+    border:2px solid grey;
+    background-color:ash;
+    height:auto;
+    width:auto;
+}
