@@ -81,5 +81,27 @@
         
   </p>
      
+
+      <div class="share_icons">
+                    <h3>Share with</h3>
+                <a class='twitter' target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class='face' target="_blank"><i class="fa fa-facebook"></i></a>
+                </div><br>
+                <hr>
+                <div>
+    <p class="end1">&#169;: oswald 2023|| All right reserved</p>
+    </div>
+    <script>
+        const link=encodeURI(window.location.href);
+        const detail=encodeURIComponent('These are some football players who received transfer deals to Saudi Arabian league);
+        const title=encodeURIComponent(document.querySelector('title').textContent);
+        const fb=document.querySelector('.face');
+        fb.href=`https://www.facebook.com/share.php?u=${link}`;
+
+        const twitter=document.querySelector('.twitter');
+        twitter.href=`https://twitter.com/share?&url=${link}&text=${detail}&hashtags=SaudiArabia,CristianoRonaldo,LionelMessi `;
+    </script>
+
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
