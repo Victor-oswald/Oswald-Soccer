@@ -11,33 +11,6 @@ function closeNavigation() {
 
 }
 
-
-function table() {
-    var tmenu = document.getElementById("table-content");
-    var tbutton = document.getElementById("htbbtn")
-    if (tmenu.style.display == "none") {
-        tmenu.style.display = "inline-block"
-    } else {
-        tmenu.style.display = "none"
-    }
-}
-function fixtures() {
-    var fmenu = document.getElementById("fixture-content")
-    if (fmenu.style.display == "none") {
-        fmenu.style.display = "block"
-    } else {
-        fmenu.style.display = "none"
-    }
-}
-function Prediction(){
-    var uf = document.getElementById("understandingfootball")
-    if (uf.style.display == "none") {
-        uf.style.display = "inline-block"
-    } else {
-        uf.style.display = "none"
-    }
-}
-
 var display=screen.width;
 if(display>='500'){
     var blobIMG =document.getElementsByClassName('blog-img');
