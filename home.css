@@ -177,14 +177,14 @@
 }
 @media(max-width: 550px){
 .img{
-    width:400px;
-    height:183px;
+    width:400;
+    height:auto;
 
     }
 }
 @media(max-width: 550px){
 .thumbnail{
-    width:100px;
-    height:70px;
+    width:100;
+    height:70;
     }
 }
