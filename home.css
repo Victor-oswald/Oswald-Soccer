@@ -175,3 +175,10 @@
     width:auto;
     padding:20px;
 }
+@media(max-width: 550px){
+.img{
+    width:400;
+    height:auto;
+
+    }
+}
