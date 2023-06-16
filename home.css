@@ -6,16 +6,7 @@
     position:sticky;
     top:0;
     border-bottom:0.5px solid #333;
-    padding:30px;
-}
-.navbar a{
-    font-size:100%;
-    color:white;
-    padding:10px 8px;
-    text-decoration:dotted;
-    overflow:hidden;
-    max-height: 5%;
-    margin-bottom: 5px;
+    padding-top:30px;
 }
 .dropdown{
     float:left;
