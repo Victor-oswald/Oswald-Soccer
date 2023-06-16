@@ -3,10 +3,10 @@
     overflow: hidden;
     background-color: white;
     width:100%;
-    position:-webkit-sticky;
     position:sticky;
     top:0;
     border-bottom:0.5px solid #333;
+    padding:30px;
 }
 .navbar a{
     font-size:100%;
