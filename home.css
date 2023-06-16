@@ -181,3 +181,11 @@
     height:70px;
     }
 }
+.pred{
+border: 2px solid #333;
+background-color: grey; 
+width:90%;
+height:auto;padding:20px; 
+border-radius: 20px; 
+color:#fff
+}
