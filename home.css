@@ -187,6 +187,7 @@ background-color: grey;
 width:90%;
 height:auto;padding:20px; 
 border-radius: 20px; 
-color:#fff
-filter:brightness(10%);
 }
+.pred{
+    filter:brightness (5);
+    }
