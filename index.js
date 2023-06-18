@@ -1,13 +1,13 @@
 function openNavigation(){
 var sideBar=document.getElementById("mySidebar");
 
-sideBar.style.display='block';
-    sideBar.style.height='auto';
+sideBar.style.width='100%';
+
 }
 
 
 function closeNavigation() {
-    document.getElementById("mySidebar").style.display= "none";
+    document.getElementById("mySidebar").style.width= "0";
 
 }
 
