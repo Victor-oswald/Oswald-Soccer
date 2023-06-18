@@ -1,13 +1,13 @@
 .navbar{
     max-height:5%;
     overflow: hidden;
-    background-color: white;
     width:100%;
     position:sticky;
     top:0;
     border-bottom:0.5px solid #333;
     padding-top:30px;
     z-index: 1;
+    background-color: cream;
 }
 .dropdown{
     float:left;
