@@ -19,7 +19,7 @@ if(display>='500'){
     };
 
 }
-var League =document.getElementById ('league').onchange=function(){
+document.getElementById ('league').onchange=function(){
    if this.selectedIndex !==(){
        window.location.href=this.vthis.value;
    }
