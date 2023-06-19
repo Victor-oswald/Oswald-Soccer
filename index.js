@@ -19,6 +19,7 @@ if(display>='500'){
     };
 
 }
-function handleSelect(go){
+var League =document.getElementById ('league').onchange()
+{
     window.location="go.value";
 }
