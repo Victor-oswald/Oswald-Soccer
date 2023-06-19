@@ -16,11 +16,10 @@ if(display>='500'){
     var blobIMG =document.getElementsByClassName('blog-img');
     for(i=0; i<blobIMG.length; i++){
         blobIMG[i].style.display="none";
-    };
+    }
 
 }
 document.getElementById ('leagues').onchange=function(){
-   if this.selectedIndex !==""{
        window.location.href=this.value;
    }
-}
+
