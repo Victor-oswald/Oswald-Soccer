@@ -19,7 +19,7 @@ if(display>='500'){
     };
 
 }
-document.getElementById ('league').onchange=function(){
+document.getElementById ('leagues').onchange=function(){
    if this.selectedIndex !==(){
        window.location.href=this.this.value;
    }
