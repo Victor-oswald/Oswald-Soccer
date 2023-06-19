@@ -19,3 +19,8 @@ if(display>='500'){
     };
 
 }
+var League=document.getElementsByClassName('leagues');
+for(i=0; i<League.length; i++){
+    if(League[i].onclick()){
+        alert(League[i].value)}
+}
