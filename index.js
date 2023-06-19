@@ -20,5 +20,5 @@ if(display>='500'){
 
 }
 function handleSelect(go){
-    window.location.href="go.value";
+    window.location="go.value";
 }
