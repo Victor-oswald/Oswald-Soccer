@@ -21,9 +21,6 @@ if(display>='500'){
 }
 document.getElementById ('league').onchange=function(){
    if this.selectedIndex !==(){
-       window.location.href=this.vthis.value;
+       window.location.href=this.this.value;
    }
-}
-{
-    window.location="go.value";
 }
