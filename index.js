@@ -20,7 +20,7 @@ if(display>='500'){
 
 }
 document.getElementById ('leagues').onchange=function(){
-   if this.selectedIndex !==(){
-       window.location.href=this.this.value;
+   if this.selectedIndex !==""{
+       window.location.href=this.value;
    }
 }
