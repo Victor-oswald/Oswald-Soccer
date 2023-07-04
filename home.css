@@ -173,6 +173,12 @@
     height:auto;
 
     }
+@media(max-width: 550px){
+.logo{
+width:140px;
+height: 110px;
+}
+}
 }
 @media(max-width: 550px){
 .thumbnail{
