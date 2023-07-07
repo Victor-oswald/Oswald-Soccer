@@ -80,5 +80,27 @@
       <li>Luiz Diaz [no.7]</li>
       <li>Darwin Nunez [no.27]</li>
       <li>Ben Doak [no.60]</li>
+   
+                <div class="share_icons">
+                    <h3>Share with</h3>
+                <a class='twitter' target="_blank">Twitter</a>
+                <a class='face' target="_blank">Facebook</a>
+                </div><br>
+                <hr>
+                <div>
+    <p class="end1">&#169;: oswald 2023|| All right reserved</p>
+    </div>
+    <script>
+        const link=encodeURI(window.location.href);
+        const detail=encodeURIComponent('Liverpool current squad list, injury update and club stats');
+        const title=encodeURIComponent(document.querySelector('title').textContent);
+        const fb=document.querySelector('.face');
+        fb.href=`https://www.facebook.com/share.php?u=${link}`;
+
+        const twitter=document.querySelector('.twitter');
+        twitter.href=`https://twitter.com/share?&url=${link}&text=${detail}&hashtags=trophies,understandingfootball,historyoftrophy,FIFA`;
+    </script>       
+
+            <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
