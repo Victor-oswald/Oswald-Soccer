@@ -187,8 +187,9 @@ height: 70px;
     }
 }
 .pred{
-border: 2px solid #333;
-background-color: grey; 
+
+box-shadow: 0 0 10px rgba(0, 0,0,0.5);
+background-color: White; 
 width:90%;
 height:auto;padding:20px; 
 border-radius: 20px; 
