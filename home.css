@@ -162,8 +162,8 @@
         font-size: large;
     }
 #Correct{
-    border:2px solid grey;
-    height:auto;
+    
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);        height:auto;
     width:auto;
     padding:20px;
 }
