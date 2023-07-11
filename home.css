@@ -197,3 +197,10 @@ border-radius: 20px;
 .pred{
     background:opacity(0.2);
     }
+.club{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+font-size: large;
+font-weight: bolder;
+
+
+}
