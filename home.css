@@ -24,12 +24,9 @@
 }
 
 .fa{
-    font-size:100px;
+    font-size:70px;
     width:30px;
-    text-decoration:none;
-    text-align:center;
-    border-radius: 100%;
-    font-weight: bolder;
+    padding:20px;
 }
 .fa-facebook{
     color:blue;
