@@ -212,6 +212,8 @@ font-weight:bold;
 border:2px solid grey;
 box-shadow:0 0 10px #D8BFD8;
 width:80%;
+background-color: inherit;
+margin-left: 50px;
 }
 .focus{
 overflow-x:scroll;
