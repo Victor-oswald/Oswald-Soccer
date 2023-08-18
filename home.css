@@ -163,6 +163,7 @@
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);        height:auto;
     width:auto;
     padding:20px;
+color:black;
 }
 @media(max-width: 550px){
 .img{
@@ -189,6 +190,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 width:90%;
 height:auto;padding:20px; 
 border-radius: 20px; 
+color :black;
 }
 .pred{
     background:opacity(0.2);
@@ -197,14 +199,14 @@ border-radius: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 font-size: large;
 font-weight: bolder;
-
+color:black;
 
 }
 .predtext{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 font-size:small;
 font-weight:bold;
-
+color:black;
 }
 .focusNews{
 border:2px solid grey
