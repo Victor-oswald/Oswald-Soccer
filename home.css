@@ -211,4 +211,9 @@ font-weight:bold;
 .focusNews{
 border:2px solid grey
 width: fit-content;
+box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+.focus{
+overflow-x:scroll;
+white-space:nowrap;
 }
