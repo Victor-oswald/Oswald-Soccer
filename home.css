@@ -210,10 +210,11 @@ font-weight:bold;
 }
 .focusNews{
 border:2px solid grey;
-width: 80%;
 box-shadow:0 0 10px #D8BFD8;
+display:inline-block;
+white-space: nowrap;
 }
 .focus{
 overflow-x:scroll;
-white-space:nowrap;
+width: 100%;
 }
