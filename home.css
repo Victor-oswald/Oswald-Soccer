@@ -1,6 +1,6 @@
 
 *{
-color: #D8BFD8
+color: #D8BFD8;
 }
 .navbar{
     max-height:5%;
@@ -209,7 +209,7 @@ font-size:small;
 font-weight:bold;
 }
 .focusNews{
-border:2px solid grey
+border:2px solid grey;
 width: 80%;
 box-shadow:0 0 10px #D8BFD8;
 }
