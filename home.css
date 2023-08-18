@@ -164,7 +164,7 @@ color: #D8BFD8
     }
 #Correct{
     
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);        height:auto;
+ box-shadow: 0 0 10px #D8BFD8;        height:auto;
     width:auto;
     padding:20px;
 }
@@ -189,7 +189,7 @@ height: 70px;
 }
 .pred{
 
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 10px #D8BFD8;
 width:90%;
 height:auto;padding:20px; 
 border-radius: 20px; 
@@ -211,7 +211,7 @@ font-weight:bold;
 .focusNews{
 border:2px solid grey
 width: fit-content;
-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+box-shadow:0 0 10px #D8BFD8;
 }
 .focus{
 overflow-x:scroll;
