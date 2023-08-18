@@ -185,7 +185,7 @@ height: 70px;
 }
 .pred{
 
-box-shadow: 0 0 10px grey
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 width:90%;
 height:auto;padding:20px; 
 border-radius: 20px; 
