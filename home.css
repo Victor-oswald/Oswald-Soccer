@@ -214,6 +214,7 @@ width:80%;
 background-color: inherit;
 margin-left: 5px;
 border:none;
+position:absolute;
 }
 .focus{
 overflow-x: scroll;
