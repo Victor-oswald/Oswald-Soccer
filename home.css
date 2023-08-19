@@ -212,11 +212,9 @@ font-weight:bold;
 .focusNews{
 width:80%;
 background-color: inherit;
-margin-left: 50px;
+margin-left: 5px;
 }
 .focus{
-overflow-x:scroll;
-width: 100%;
 overflow-x: scroll;
 white-space: nowrap;
 }
