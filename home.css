@@ -213,6 +213,7 @@ font-weight:bold;
 width:80%;
 background-color: inherit;
 margin-left: 5px;
+border:none;
 }
 .focus{
 overflow-x: scroll;
