@@ -6,7 +6,7 @@
 }
     @media(min-width:700px){
     .thumbnail{
-        width:15%;
+        width:200px;
         height:400px;
     }
 }
