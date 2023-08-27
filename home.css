@@ -3,6 +3,8 @@
         width:60%;
         margin-left:19%;
     }
+}
+    @media(min-width:700px){
     .thumbnail{
         width:15%;
         height:400px;
