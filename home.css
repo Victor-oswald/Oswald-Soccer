@@ -3,6 +3,10 @@
         width:60%;
         margin-left:19%;
     }
+    .thumbnail{
+        width:15%;
+        height:400px;
+    }
 }
 *{
 color: #D8BFD8;
