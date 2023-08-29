@@ -234,12 +234,14 @@ font-weight: bolder;
 font-size:small;
 font-weight:bold;
 }
+@media(max-width:700px){
 .focusNews{
 width:80%;
 background-color: inherit;
 margin-left: 5px;
 border:none;
 text-align:center;
+}
 }
 .focus{
 overflow-x: scroll;
