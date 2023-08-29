@@ -1,3 +1,6 @@
+.focusText{
+    text-align:center;
+}
 @media(min-width:700px){
     body{
         width:60%;
