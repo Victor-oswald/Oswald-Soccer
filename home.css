@@ -15,7 +15,7 @@ border:none;
     @media(min-width:700px){
     .thumbnail{
         width:200px;
-        height:250px;
+        height:200px;
     }
 }
 @media{
