@@ -1,6 +1,3 @@
-.focusText{
-    text-align:center;
-}
 @media(min-width:700px){
     body{
         width:60%;
@@ -240,6 +237,7 @@ width:80%;
 background-color: inherit;
 margin-left: 5px;
 border:none;
+text-align:center;
 }
 .focus{
 overflow-x: scroll;
