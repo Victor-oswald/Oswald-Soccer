@@ -376,13 +376,14 @@ if(currentdate>=publicationDate){
       minutesElapsed="";
       hoursElapsed="";
     }
-    if( minutesElapsed >=1 && minutesElapsed <=60 ){
+ else if( hoursElapsed >=1 && minutesElapsed <=24 ){
+        timeElement.textContent="Published"+"" + hoursElapsed + "Hours ago"; 
+        minutesElapsed="";
+    }
+  else if( minutesElapsed >=1 && minutesElapsed <=60 ){
         timeElement.textContent="Published"+"" + minutesElapsed + "Minutes ago";  
     }
-    if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+"" + hoursElapsed + "Hours ago"; 
-      minutesElapsed="";
-    }
+   
 }
   </script>
   </a>
