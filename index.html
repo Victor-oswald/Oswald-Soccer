@@ -372,13 +372,16 @@ if(currentdate>=publicationDate){
     var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
     //timeElement.textContent="Published"+"" + daysElapsed+ +"days" + hoursElapsed +"hours" + minutesElapsed +"Minutes ago";
     if(daysElapsed>=1){
-        timeElement.textContent="Published"+"" + daysElapsed + "days ago";  
+        timeElement.textContent="Published"+"" + daysElapsed + "days ago";
+      minutesElapsed="";
+      hoursElapsed="";
     }
     if( minutesElapsed >=1 && minutesElapsed <=60 ){
         timeElement.textContent="Published"+"" + minutesElapsed + "Minutes ago";  
     }
     if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+"" + hoursElapsed + "Hours ago";   
+        timeElement.textContent="Published"+"" + hoursElapsed + "Hours ago"; 
+      minutesElapsed="";
     }
 }
   </script>
