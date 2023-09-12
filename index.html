@@ -341,13 +341,13 @@ if(currentdate>=publicationDate){
     var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
     //timeElement.textContent="Published"+"" + daysElapsed+ +"days" + hoursElapsed +"hours" + minutesElapsed +"Minutes ago";
     if(daysElapsed>=1){
-        timeElement.textContent="Published"+"\uOOAO" + daysElapsed + "day(s) ago"+"\uOOAO" + hoursElapsed +"hr(s)"+"\uOOAO" + minutesElapsed +"Min(s) ago;  
+        timeElement.textContent="Published"+"/\u00A0/" + daysElapsed + "day(s) ago"+"/\u00A0/" + hoursElapsed +"hr(s)"+"/\u00A0/" + minutesElapsed +"Min(s) ago;  
     }
    else if( minutesElapsed >=1 && minutesElapsed <=60 ){
-        timeElement.textContent="Published"+"\uOOAO" + minutesElapsed + "Min(s) ago";  
+        timeElement.textContent="Published"+"/\u00A0/" + minutesElapsed + "Min(s) ago";  
     }
    else if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+"\uOOAO" + hoursElapsed + "Hours ago"+"\uOOAO"+ minutesElapsed + "Min(s) ago";   
+        timeElement.textContent="Published"+"/\u00A0/" + hoursElapsed + "Hours ago"+"/\u00A0/"+ minutesElapsed + "Min(s) ago";   
     }
 }
   </script>
@@ -372,13 +372,13 @@ if(currentdate>=publicationDate){
     var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
     //timeElement.textContent="Published"+"" + daysElapsed+ +"d" + hoursElapsed +"hrs" + minutesElapsed +"Mins";
     if(daysElapsed>=1){
-        timeElement.textContent="Published"+"\uOOAO" + daysElapsed + "day(s)"+"\uOOAO"+ daysElapsed+ +"day(s)"+"\uOOAO" + hoursElapsed +"hr(s)"+"\uOOAO" + minutesElapsed +"Min(s)";
+        timeElement.textContent="Published"+"/\u00A0/" + daysElapsed + "day(s)"+"/\u00A0/"+ daysElapsed+ +"day(s)"+"/\u00A0/" + hoursElapsed +"hr(s)"+"\uOOAO" + minutesElapsed +"Min(s)";
     }
  else if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+"\uOOAO" + hoursElapsed + "hr(s)" +"\uOOAO" + minutesElapsed +"Min(s) ago"; 
+        timeElement.textContent="Published"+"/\u00A0/" + hoursElapsed + "hr(s)" +"/\u00A0/" + minutesElapsed +"Min(s) ago"; 
     }
   else if( minutesElapsed >=1 && minutesElapsed <=60 ){
-        timeElement.textContent="Published"+"\uOOAO" + minutesElapsed + "Min(s) ago";  
+        timeElement.textContent="Published"+"/\u00A0/" + minutesElapsed + "Min(s) ago";  
     }
    
 }
