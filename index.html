@@ -327,7 +327,30 @@
  <a href="News highlights/#pogba1">
    <button class="focusNews">
 <img src="Pogba[1].webp" width="80%" height="150px" alt="Paul Pogba"/><br>
-<span class="focusText">Pogba's Agent has Demanded counter <br> Analysis on pogba's situation</span>
+<span class="focusText">Pogba's Agent has Demanded counter <br> Analysis on pogba's situation
+</span><br>
+     <span id=#pogbapubTime></span>
+     var publicationDate=new Date("2023-09-12T09:00");
+var currentdate=new Date();
+var timeElement=document.getElementById("#pogbapubTime");
+if(currentdate>=publicationDate){
+    var timeElapsed=currentdate-publicationDate;
+    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
+    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
+    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
+    //timeElement.textContent="Published"+"" + daysElapsed+ +"days" + hoursElapsed +"hours" + minutesElapsed +"Minutes ago";
+    if(daysElapsed>=1){
+        timeElement.textContent="Published"+"" + daysElapsed + "days ago";  
+    }
+    if( minutesElapsed >=1 && minutesElapsed <=60 ){
+        timeElement.textContent="Published"+"" + minutesElapsed + "Minutes ago";  
+    }
+    if( hoursElapsed >=1 && minutesElapsed <=24 ){
+        timeElement.textContent="Published"+"" + hoursElapsed + "Hours ago";   
+    }
+}
+
+
   </a>
 </button>
     
