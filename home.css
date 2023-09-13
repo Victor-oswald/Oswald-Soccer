@@ -1,8 +1,7 @@
 .pubTime{
-    font-size:medium;
-    font-weight:bold;
+    font-size:smaller;
     color:gray;
-    opacity:0.5;
+    opacity:0.5px;
 }
 a:link{
 text-decoration:none;
