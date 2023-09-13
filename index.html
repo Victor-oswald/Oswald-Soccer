@@ -337,6 +337,28 @@ if(currentdate>=publicationDate){
 
   <div class="focus">
 
+ <a href="manchester united players.htm/#manutd1">
+   <button class="focusNews">
+<img src="man utd.png" width="80%" height="150px" alt="man Utd logo"/><br>
+<span class="focusText">Manchester United has confirmed patnership with Snapdragon</span><br>
+               <span id="manutd1pubtime" class="pubTime"></span>
+     <script>
+     var publicationDate=new Date("2023-09-12T23:40");
+var currentdate=new Date();
+var timeElement=document.getElementById("manutd1pubtime");
+if(currentdate>=publicationDate){
+    var timeElapsed=currentdate-publicationDate;
+    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
+    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
+    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
+        timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
+   
+}
+  </script>
+  </a>
+</button>
+    
+
  <a href="News highlights/#pogba1">
    <button class="focusNews">
 <img src="Pogba[1].webp" width="80%" height="150px" alt="Paul Pogba"/><br>
