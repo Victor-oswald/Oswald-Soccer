@@ -369,17 +369,23 @@ if (currentdate >= publicationDate) {
 <span class="focusText">Manchester United has confirmed patnership <br> with Snapdragon</span><br>
                <span id="manutd1pubtime" class="pubTime"></span>
      <script>
-     var publicationDate=new Date("2023-09-12T23:40");
-var currentdate=new Date();
-var timeElement=document.getElementById("manutd1pubtime");
-if(currentdate>=publicationDate){
-    var timeElapsed=currentdate-publicationDate;
-    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
-    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
-    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-        timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
-   
+var publicationDate = new Date("2023-09-12T23:40");
+var currentdate = new Date();
+var timeElement = document.getElementById("manutd1pubtime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
 }
+
   </script>
   </a>
 </button>
