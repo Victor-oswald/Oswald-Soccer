@@ -57,6 +57,20 @@
     </div><br>
 
 <div id="pogba1">
+         <span id="ToffolopubTime" class="pubTime"></span>
+     <script>
+     var publicationDate=new Date("2023-09-13T18:10");
+var currentdate=new Date();
+var timeElement=document.getElementById("ToffolopubTime");
+if(currentdate>=publicationDate){
+    var timeElapsed=currentdate-publicationDate;
+    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
+    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
+    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
+    timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hr(s)" +" " + minutesElapsed +"Min(s) ago";
+  
+}
+  </script>
 <img src="Pogba[1].webp" width="100%" height="auto" float="left" alt="Paul Pogba" class="img"/><br><button style="border: none; font-size: x-large;"><u>BREAKING: </u><h3>Paul Pogba's Agent Demands Counter Analysis</h3><br>
 <p>
     Paul Pogba's agent has spoken out on Pogba's situation stating that Pogba never wanted to bend the law and they are waiting for counter Analysis, until then nothing will be said on the situation.
