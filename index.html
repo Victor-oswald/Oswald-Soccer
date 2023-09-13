@@ -352,16 +352,8 @@ if(currentdate>=publicationDate){
     var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
     var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
     var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-    timeElement.textContent="Published"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Minutes ago";
-   /* if(daysElapsed>=1){
-        timeElement.textContent="Published"+" " + daysElapsed + "day(s)"+" " + hoursElapsed +"hr(s)"+" " + minutesElapsed +"Min(s) ago";  
-    }
-   else if( minutesElapsed >=1 && minutesElapsed <=60 ){
-        timeElement.textContent="Published"+" " + minutesElapsed + "Min(s) ago";  
-    }
-   else if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+" " + hoursElapsed + "Hours ago"+" "+ minutesElapsed + "Min(s) ago";   
-    }*/
+    timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
+  
 }
   </script>
 
@@ -383,16 +375,7 @@ if(currentdate>=publicationDate){
     var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
     var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
     var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-        timeElement.textContent="Published"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Minutes ago";
-    /*if(daysElapsed>=1){
-        timeElement.textContent="Published"+" " + daysElapsed + "day(s)"+" "+ daysElapsed+ +"day(s)"+" " + hoursElapsed +"hr(s)"+" " + minutesElapsed +"Min(s)";
-    }
- else if( hoursElapsed >=1 && minutesElapsed <=24 ){
-        timeElement.textContent="Published"+" " + hoursElapsed + "hr(s)" +" " + minutesElapsed +"Min(s) ago"; 
-    }
-  else if( minutesElapsed >=1 && minutesElapsed <=60 ){
-        timeElement.textContent="Published"+" " + minutesElapsed + "Min(s) ago";  
-    }*/
+        timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
    
 }
   </script>
