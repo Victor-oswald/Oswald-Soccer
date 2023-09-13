@@ -255,6 +255,6 @@ text-align:center;
 overflow-x: scroll;
 white-space: nowrap;
 }
-.focusText{
-    width:150px;
+.focusNews{
+    border-radius:20px;
 }
