@@ -396,18 +396,23 @@ if (currentdate >= publicationDate) {
 <img src="Pogba[1].webp" width="80%" height="150px" alt="Paul Pogba"/><br>
 <span class="focusText">Pogba's Agent has Demanded counter <br> Analysis on pogba's situation
 </span><br>
-     <span id=#pogba1pubTime class="pubTime"></span>
+     <span id="pogba1pubTime" class="pubTime"></span>
      <script>
-     var publicationDate=new Date("2023-09-12T09:00");
-var currentdate=new Date();
-var timeElement=document.getElementById("#pogba1pubTime");
-if(currentdate>=publicationDate){
-    var timeElapsed=currentdate-publicationDate;
-    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
-    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
-    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-    timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
-  
+var publicationDate = new Date("2023-09-12T09:00");
+var currentdate = new Date();
+var timeElement = document.getElementById("pogba1pubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
 }
   </script>
 
@@ -419,18 +424,23 @@ if(currentdate>=publicationDate){
    <button class="focusNews">
 <img src="Pogba[1].webp" width="80%" height="150px" alt="Paul Pogba"/><br>
 <span class="focusText">Paul Pogba Suspended for Doping</span><br>
-          <span id=#pogbapubTime class="pubTime"></span>
+          <span id="pogbapubTime" class="pubTime"></span>
      <script>
-     var publicationDate=new Date("2023-09-12T08:40");
-var currentdate=new Date();
-var timeElement=document.getElementById("#pogbapubTime");
-if(currentdate>=publicationDate){
-    var timeElapsed=currentdate-publicationDate;
-    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
-    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
-    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-        timeElement.textContent="Published :"+" " + daysElapsed +"day(s)" +" " + hoursElapsed +"hrs" +" " + minutesElapsed +"Min(s) ago";
-   
+ var publicationDate = new Date("2023-09-12T08:40");
+var currentdate = new Date();
+var timeElement = document.getElementById("pogbapubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
 }
   </script>
   </a>
