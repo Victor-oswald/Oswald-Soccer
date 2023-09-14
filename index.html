@@ -98,73 +98,80 @@
   <span style="border:none; font-size: x-large;" class="club">1 X 2 Betting Tips</span><br><br>
        <span id="predict" class="pubTime"></span><br><br>
      <script>
-     var publicationDate=new Date("2023-09-13T00:00");
-var currentdate=new Date();
-var timeElement=document.getElementById("predict");
-if(currentdate>=publicationDate){
-    var timeElapsed=currentdate-publicationDate;
-    var daysElapsed=Math.floor(timeElapsed /(1000*60*60*24));
-    var hoursElapsed=Math.floor(timeElapsed %(1000*60*60*24) /(1000*60*60));
-    var minutesElapsed=Math.floor(timeElapsed % (1000*60*60) /(1000*60));
-    timeElement.textContent="Published :"+" "+ hoursElapsed +"hr(s)" +" " + minutesElapsed +"Min(s) ago";
+var publicationDate = new Date("2023-09-14T03:00");
+var currentdate = new Date();
+var timeElement = document.getElementById("predict");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
 }
+
   </script>
 
 <div class="pred">
-<button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">NK Omladinac</button>
-<button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Hajduk Split</button>
-<center style="font-size: large " class="predtext">15:00<br><br>League: Croatia Cup <br><br>Tip: Awayu(2)</center><br>
-    <center style="font-size:large" class="predtext">FORM:<center/><br><span style="float: left; font-size: large" class="predtext">NA</span><span style="float: right; font-size: large" class="predtext"> L W W L W</span><br><br>
+<button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">AL safa</button>
+<button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">AL Arabi </button>
+<center style="font-size: large " class="predtext">16:20<br><br>League: Saudi Arabia 1st Division<br><br>Tip: Away(2)</center><br>
+    <center style="font-size:large" class="predtext">FORM:<center/><br><span style="float: left; font-size: large" class="predtext">L L L L L </span><span style="float: right; font-size: large" class="predtext"> W D W W L</span><br><br>
      <center style="font-size: large">League Position:</center><br><span style="float: left; font-size:large" class="predtext">NA</span><span style="float: right; font-size: large" class="predtext">NA</span>
 </div><br><br><br><br>
 
 
 
 <div  class="pred">
-    <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">SV Heimstetten</button>
-    <button style="background-color: inherit; float: right; border:none;  font-size: larger" class="club">1860 Munich II</button>
-    <center style="font-size: large" class="predtext">18:00<br><br>League: Germany Oberliga <br><br>Tip: Away(2)</center><br>
-     <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large"  class="predtext">D W W W D</span><span style="float: right; font-size: large"  class="predtext">W D D L W</span ><br><br>
+    <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">AL Faisaly</button>
+    <button style="background-color: inherit; float: right; border:none;  font-size: larger" class="club">AL Jabalain</button>
+    <center style="font-size: large" class="predtext">18:30<br><br>League: Saudi Arabia 1st Division <br><br>Tip: Home(1)</center><br>
+     <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large"  class="predtext">L W W W L</span><span style="float: right; font-size: large"  class="predtext">W D W W L</span ><br><br>
      <center style="font-size: large" class="predtext" >League Position:</center><br><span style="float: left; font-size:larger" class="predtext">NA</span> <span style="float:right; font-size: larger" class="predtext" >NA</span>
   </div><br><br><br><br>
 
 
 
     <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">TSV Sasel</button>
-        <button style="background-color: inherit; float: right; border:none;font-size: larger"  class="club">HEBC Hamburg</button>
-        <center style="font-size: large" class="predtext" > 18:30<br><br>League: Germany Oberliga <br><br>Tip: Home(1)</center><br>
-         <center style="font-size: large"  class="predtext" >FORM:</center><br><span style="float: left; font-size: large" class="predtext" >L D W W L</span><span style="float: right; font-size: large"  class="predtext">D W D W W</span><br><br>
+        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">Hajer FC AL-Hasa</button>
+        <button style="background-color: inherit; float: right; border:none;font-size: larger"  class="club">Jeddah</button>
+        <center style="font-size: large" class="predtext" > 16:20<br><br>League: Saudi Arabia 1st Division <br><br>Tip: Away(2)</center><br>
+         <center style="font-size: large"  class="predtext" >FORM:</center><br><span style="float: left; font-size: large" class="predtext" >L W  L L W</span><span style="float: right; font-size: large"  class="predtext">W L W L W</span><br><br>
          <center style="font-size: large" class="predtext" >League Position </center><br> <span style="float: left; font-size: large" class="predtext" >NA</span> <span style="float:right; font-size: large"  class="predtext">NA</span>
         </div><br>
 <br><br><br>
      
   
     <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">Acharnaikos</button>
-        <button style="background-color: inherit; float: right; border:none;font-size: larger" class="club">Panachaiki</button>
-        <center style="font-size: large" class="predtext" > 14:00<br><br>League: Greece Cup <br><br>Tip: Away(2)</center><br>
-         <center style="font-size: large"  class="predtext">FORM: </center><br><span style="float: left; font-size: larger" class="predtext" >W W L</span><span style="float: right; font-size: large"  class="predtext">L W L L L</span><br><br>
+        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">AL Bukayriyah</button>
+        <button style="background-color: inherit; float: right; border:none;font-size: larger" class="club">Ohud Medina</button>
+        <center style="font-size: large" class="predtext" > 16:45<br><br>League:Saudi Arabia 1st Division <br><br>Tip: Away(2)</center><br>
+         <center style="font-size: large"  class="predtext">FORM: </center><br><span style="float: left; font-size: larger" class="predtext" >L W L W L</span><span style="float: right; font-size: large"  class="predtext">L W L W L</span><br><br>
          <center style="font-size: large"  class="predtext">League Position </center><br> <span style="float: left; font-size: large"  class="predtext">NA</span> <span style="float:right; font-size: large"  class="predtext"> NA</span>
         </div><br>
 <br><br><br>
 
  
  <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">Chaniotis</button>
-        <button style="background-color: inherit; float: right; border:none; font-size: larger"   class="club">AO Tilikratis</button> 
-<center style="font-size: Larger"   class="predtext">14:00<br><br>League: Greece Cup <br><br>Tip: Home(1)</center><br>
-         <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large" class="predtext" >  W W </span><span style="float: right; font-size: larger" class="predtext" > L W L W L</span><br><br>
+        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">AL Orouba SC</button>
+        <button style="background-color: inherit; float: right; border:none; font-size: larger"   class="club">AL Batin</button> 
+<center style="font-size: Larger"   class="predtext">17:05<br><br>League: Saudi Arabia 1st Division<br><br>Tip: Home(1)</center><br>
+         <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large" class="predtext" >W W L W W </span><span style="float: right; font-size: larger" class="predtext" > L L W L D</span><br><br>
          <center style="font-size: large"  class="predtext">League Position </center><br> <span style="float: left; font-size: large"  class="predtext">NA</span> <span style="float:right; font-size: large"  class="predtext"> NA</span>
         </div><br>
 <br><br><br>
 
 
   <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">Llioupoli GS</button>
-        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Levadiakos</button>
-        <center style="font-size: large" class="predtext" > 14:00<br><br>League: Greece Cup<br><br>Tip: Away(2)</center><br>
-         <center style="font-size: large" class="predtext" >FORM: </center><br><span style="float: left; font-size:larger" class="predtext" >L L W D L</span><span style="float: right; font-size: larger" class="predtext" > D D D D W</span><br><br>
+        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">HB Koege</button>
+        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Kolding IF</button>
+        <center style="font-size: large" class="predtext" > 18:00<br><br>League: Denmark 1st Division<br><br>Tip: Draw(X)</center><br>
+         <center style="font-size: large" class="predtext" >FORM: </center><br><span style="float: left; font-size:larger" class="predtext" > W D D L L</span><span style="float: right; font-size: larger" class="predtext" >W L W L L</span><br><br>
          <center style="font-size: large" class='predtext'>League Position </center><br> <span style="float: left; font-size: large"  class="predtext">NA</span> <span style="float:right; font-size: large" class="predtext" >NA</span>
  </div><br>
 <br><br><br>
@@ -172,10 +179,10 @@ if(currentdate>=publicationDate){
 
 
   <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none;  font-size:larger" class="club">Hegauer Women</button>
-        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Eintracht Women</button>
-        <center style="font-size: large" class="predtext" > 17:30<br><br>League: Women DFB Cup <br><br>Tip: Away(2)</center><br>
-         <center style="font-size: large"  class="predtext">FORM: </center><br><span style="float: left; font-size: large"  class="predtext">  W L W</span><span style="float: right; font-size: large" class="predtext">  W W W W W</span><br><br>
+        <button style="background-color: inherit; float: left; border:none;  font-size:larger" class="club">Londrina EC</button>
+        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Ituano FC</button>
+        <center style="font-size: large" class="predtext" > 22:30<br><br>League: Brazil serie B <br><br>Tip: Away(2)</center><br>
+         <center style="font-size: large"  class="predtext">FORM: </center><br><span style="float: left; font-size: large"  class="predtext"> L D L L L</span><span style="float: right; font-size: large" class="predtext"> L L W W D</span><br><br>
          <center style="font-size: large" class="predtext">League Position </center><br> <span style="float: left; font-size: large" class="predtext">NA</span> <span style="float:right; font-size: large"  class="predtext">NA</span>
 </div><br>
 <br><br><br>
@@ -184,10 +191,10 @@ if(currentdate>=publicationDate){
 
 
   <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">Didcot Town</button>
-        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Tadley Calleva</button>
-        <center style="font-size: large" class="predtext" > 19:45<br><br>League: FA Cup Qualification<br><br>Tip: Home(1)</center><br>
-         <center style="font-size: large" class="predtext" >FORM: </center><br><span style="float: left; font-size: large" class="predtext">W D L L L</span><span style="float: right; font-size: large"  class="predtext">L</span><br><br>
+        <button style="background-color: inherit; float: left; border:none; font-size: larger" class="club">Fortaleza</button>
+        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Corinthians</button>
+        <center style="font-size: large" class="predtext" > 23:00<br><br>League: Brazil Serie A<br><br>Tip: Draw(X)</center><br>
+         <center style="font-size: large" class="predtext" >FORM: </center><br><span style="float: left; font-size: large" class="predtext">L W W W W</span><span style="float: right; font-size: large"  class="predtext">D W D W D</span><br><br>
          <center style="font-size: large" class="predtext">League Position </center><br> <span style="float: left; font-size: large"  class="predtext">NA</span> <span style="float:right; font-size: large"  class="predtext">NA</span>
         </div><br> <br><br><br>
 
@@ -196,10 +203,10 @@ if(currentdate>=publicationDate){
 
 
        <div  class="pred">
-        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">Deportivo Pereira</button>
-        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Deportivo Pasto</button>
-        <center style="font-size: large" class="predtext"> 22:00<br><br>League: Colombia Primera A<br><br>Tip: Home(1)</center><br>
-         <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large" class="predtext">L W L D L</span><span style="float: right; font-size: large" class="predtext" >W L W L D</span><br><br>
+        <button style="background-color: inherit; float: left; border:none;  font-size: larger" class="club">Santos FC</button>
+        <button style="background-color: inherit; float: right; border:none; font-size: larger" class="club">Cruzeriro</button>
+        <center style="font-size: large" class="predtext"> 23:00<br><br>League: Brazil Serie A<br><br>Tip: Home/Draw(1X)</center><br>
+         <center style="font-size: large" class="predtext">FORM: </center><br><span style="float: left; font-size: large" class="predtext">L L W L D</span><span style="float: right; font-size: large" class="predtext" >D L D L D</span><br><br>
          <center style="font-size: large" class="predtext" >League Position </center><br> <span style="float: left; font-size: large" class="predtext" >NA</span> <span style="float:right; font-size: large"  class="predtext">NA</span>
         </div><br>  <br>
      <span style="font-size: Larger;" class="club">FORM BREAKDOWN:</span> <br>
