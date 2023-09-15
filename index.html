@@ -344,6 +344,34 @@ if (currentdate >= publicationDate) {
 
   <div class="focus">
 
+
+     <a href="manchester united players.htm/#manutd1">
+   <button class="focusNews">
+<img src="man utd.png" width="80%" height="150px" alt="man Utd logo"/><br>
+<span class="focusText">Jadon Sancho trains alone,<br>away from the first team due<br>to indiscispline</span><br>
+               <span id="sanchopubtime" class="pubTime"></span>
+     <script>
+var publicationDate = new Date("2023-09-14T22:40");
+var currentdate = new Date();
+var timeElement = document.getElementById("sanchopubtime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+
+  </script>
+  </a>
+</button>
+
          <a href="News highlights/#FernandoSantos">
    <button class="focusNews">
 <img src="FernandoSantos[1].webp" width="80%" height="150px" alt="Paul Pogba"/><br>
