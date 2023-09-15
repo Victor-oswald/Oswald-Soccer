@@ -99,6 +99,36 @@
     <li>Rasmus Hojlund []</li><br><br>
    
 <h2 class="club" style=" font-size:40px">Manchester United latest news</h2><br><br>
+    <div class="pred" id="Amrabat1">
+<img src="Sancho1[1].webp" width="100%" height="auto" float="left" alt="Jadon Sancho" class="img"/><br><button style="border: none; font-size: x-large;"><u>BREAKING: </u><h3>Jadon Sancho trains alone, away from the first team due to indiscipline</h3><br>
+
+    <span id="sanchopubtime" class="pubTime"></span>
+     <script>
+var publicationDate = new Date("2023-09-14T22:40");
+var currentdate = new Date();
+var timeElement = document.getElementById("sanchopubtime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+    </script>
+    <p>
+        Jadon Sancho, after being left out of the manchester united squad that traveled to North london to face Arsenal on sunday due to as what the manager described as poor training performance,
+        made a post on his social media handle describing himself as been made a scape goat for a long time. After series of internal misunderstandings, he deleted the post on tuesday but is yet to apologise
+        to the coach and the entire squad at large. He was banned from training with the first team according to the club, he will train alone, away from the first team until he makes an apology for his rude social media post.
+    </p>
+    
+</div><br>
+<hr>
 
     <div class="pred" id="manutd1">
                     <span id="manutd1pubtime" class="pubTime"></span><br><br>
