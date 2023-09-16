@@ -633,7 +633,31 @@ if (currentdate >= publicationDate) {
 <div id="blog-sec">
 <h3 style="font-size: x-large; text-align: center">Blogs</h3>
 
-                   
+     
+<div>
+          <img src="Analytics[1].webp" width="100%" height="auto" float="left" alt="Harry Kane" class="thumbnail"/>
+        <a href="Who is best striker in England.html">  <span style="float: right; width: 60%">How to use data analytics to improve your sports betting strategy</span></a><br><br>
+           <span id="analyticspubTime" class="pubTime"></span>
+     <script>
+ var publicationDate = new Date("2023-09-16T01:00");
+var currentdate = new Date();
+var timeElement = document.getElementById("analyticspubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+  </script> 
+
+</div><br><br>                   
     
 <div>
           <img src="Kane .webp" width="100%" height="auto" float="left" alt="Harry Kane" class="thumbnail"/>
