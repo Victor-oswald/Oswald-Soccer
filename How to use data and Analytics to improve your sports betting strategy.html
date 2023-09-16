@@ -50,6 +50,25 @@
   </div></br></br>
   </div>
     <h1>How to use data and analytics to improve your sports betting strategy</h1>
+                 <span id="analyticspubTime" class="pubTime"></span>
+     <script>
+ var publicationDate = new Date("2023-09-16T01:00");
+var currentdate = new Date();
+var timeElement = document.getElementById("analyticspubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+  </script> 
 <img src="Analytics[1].jpg" width="100%" height="100%" alt="data anlytics"/>
     <p>
         Data analysis has great impact on statistical data and data processing.
