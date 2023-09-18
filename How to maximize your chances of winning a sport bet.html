@@ -50,6 +50,27 @@
   </div></br></br>
   </div>
 <h1>Sports betting strategies: How to maximize your chances of winning</h1>
+                       <span id="analyticspubTime" class="pubTime"></span><br>
+     <script>
+ var publicationDate = new Date("2023-09-18T02:19");
+var currentdate = new Date();
+var timeElement = document.getElementById("analyticspubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+  </script> 
+<img src="Analytics2[1].jpg" width="100%" height="100%" alt="data anlytics"/>
+<div id="body">
 <p>
     Sports betting has increasingly become a world recognized gamble option with full legal rights of operation. Several strategies are adopted in the sports 
     betting industry in order to rightly compute a match data and produce a correct prediction. The growth rate of the sports betting industry lately has increased
