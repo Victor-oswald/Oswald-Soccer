@@ -637,6 +637,34 @@ if (currentdate >= publicationDate) {
 <div id="blog-sec">
 <h3 style="font-size: x-large; text-align: center">Blogs</h3>
 
+  <div>
+          <img src="Analytics2[1].jpg" width="100%" height="auto" float="left" alt="Data Analytics" class="thumbnail"/>
+        <a href="How to maximize your chances of winning a sport bet.html">  <span style="float: right; width: 60%">How to maximize your chances of winning a sports bet<br>
+          <span id="analytics2pubTime" class="pubTime"></span>
+        
+        </span></a><br><br>
+
+     <script>
+ var publicationDate = new Date("2023-09-18T02:20");
+var currentdate = new Date();
+var timeElement = document.getElementById("analytics2pubTime");
+if (currentdate >= publicationDate) {
+    var timeElapsed = currentdate - publicationDate;
+    var daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+    var hoursElapsed = Math.floor(timeElapsed % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    var minutesElapsed = Math.floor(timeElapsed % (1000 * 60 * 60) / (1000 * 60));
+    if (daysElapsed >= 1) {
+        timeElement.textContent = "Published :" + " " + daysElapsed + "day(s) ago";
+    } else if (hoursElapsed >= 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + hoursElapsed + "hr(s) ago";
+    } else if (minutesElapsed >= 1 && hoursElapsed < 1 && daysElapsed < 1) {
+        timeElement.textContent = "Published :" + " " + minutesElapsed + "Min(s) ago";
+    }
+}
+  </script> 
+
+</div><br><br>    
+
      
 <div>
           <img src="Analytics[1].jpg" width="100%" height="auto" float="left" alt="Data Analytics" class="thumbnail"/>
